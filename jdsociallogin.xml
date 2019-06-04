@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" method="upgrade" group="system">
+   <name>PLG_JDSOCIALLOGIN_LABEL</name>
+   <author>JoomDev</author>
+   <creationDate>June 2019</creationDate>
+   <version>1.0.0</version>
+   <copyright>Copyright (C) 2019 Joomdev, Inc. All rights reserved.</copyright>
+   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+   <authorEmail>info@joomdev.com</authorEmail>
+   <authorUrl>https://www.joomdev.com</authorUrl>
+   <description>PLG_JDSOCIALLOGIN_DESC</description>>
+   <files>
+      <filename plugin="jdsociallogin">jdsociallogin.php</filename>
+      <folder>lib</folder>
+	   <folder>fields</folder>
+      <folder>layouts</folder>
+   </files>
+    <media folder="media" destination="plg_jdsociallogin">
+      <folder>assets</folder>
+   </media>
+   <languages folder="language">
+      <language tag="en-GB">en-GB/en-GB.plg_system_jdsociallogin.ini</language>
+      <language tag="en-GB">en-GB/en-GB.plg_system_jdsociallogin.sys.ini</language>
+   </languages>
+   <config>
+      <fields name="params">
+           <fieldset name="basic" addfieldpath="/administrator/components/com_menus/models/fields">
+           <field 
+               name="spacerFacebook" 
+               type="jdheading" 
+               icon="icon-pencil-2"
+               label="COM_PLUGINS_FACEBOOK_SPACER_LABEL"
+               description=""
+               />           
+           
+           <field
+				   name="enableFb"
+				   type="radio"
+				   label="COM_PLUGINS_ENABLE_FACEBOOK_LABEL"
+				   description="COM_PLUGINS_ENABLE_FACEBOOK_DESC"
+				   default="1"
+			   	class="btn-group btn-group-yesno"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+          <field 
+               name="fb_app_id"
+               type="text"
+               showon="enableFb:1"
+               label="PLG_JDSOCIALLOGIN_FB_APP_ID_LABEL"
+               description="PLG_JDSOCIALLOGIN_FB_APP_ID_DESC"
+               />
+
+          <field 
+               name="fb_app_secret" 
+               type="password" 
+               showon="enableFb:1"
+               label="PLG_JDSOCIALLOGIN_FB_APP_SECRET_LABEL"
+               description="PLG_JDSOCIALLOGIN_FB_APP_SECRET_DESC"
+               />
+         <field 
+               name="FacebookCallback" 
+               type="jdcallback" 
+               url="COM_PLUGINS_FACEBOOK_CALLBACK_URL"
+               label="COM_PLUGINS_FACEBOOK_CALLBACK_LABEL"
+               description="COM_PLUGINS_FACEBOOK_CALLBACK_DESC"
+               />  
+         <field 
+               name="spacerTwitter" 
+               type="jdheading" 
+               icon="icon-pencil-2"
+               label="COM_PLUGINS_TWITTER_SPACER_LABEL"
+               description=""
+               />
+
+            <field
+				   name="enableTwitter"
+				   type="radio"
+				   label="COM_PLUGINS_ENABLE_TWITTER_LABEL"
+				   description="COM_PLUGINS_ENABLE_TWITTER_DESC"
+				   default="1"
+			   	class="btn-group btn-group-yesno"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+         <field 
+               name="twitter_app_id"
+               type="text"
+               showon="enableTwitter:1"
+               label="PLG_JDSOCIALLOGIN_TWITTER_APP_ID_LABEL"
+               description="PLG_JDSOCIALLOGIN_TWITTER_APP_ID_DESC"
+               />
+
+         <field 
+               name="twitter_app_secret" 
+               type="password" 
+               showon="enableTwitter:1"
+               label="TWITTERLG_JDSOCIALLOGIN_TWITTER_APP_SECRET_LABEL"
+               description="PLG_JDSOCIALLOGIN_TWITTER_APP_SECRET_DESC"
+               />
+
+            <field 
+               name="twitterCallback" 
+               type="jdcallback" 
+               url="COM_PLUGINS_TWITTER_CALLBACK_URL"
+               label="COM_PLUGINS_TWITTER_CALLBACK_LABEL"
+               description="COM_PLUGINS_TWITTER_CALLBACK_DESC"
+               />  
+         </fieldset>
+         <fieldset name="design" addfieldpath="/plugins/system/jdsociallogin/fields">
+         <field 
+               name="setting" 
+               type="jdheading" 
+               icon="icon-cog"
+               label="COM_PLUGINS_GLOBAL_SETTINGS_LABEL"
+               description="COM_PLUGINS_GLOBAL_SETTINGS_DESC"
+               />         
+          <field
+				name="allowInUserPage"
+				type="radio"
+				label="PLG_JDSOCIALLOGIN_SB_ALLOW_IN_USER_PAGE_LABEL"
+				description="PLG_JDSOCIALLOGIN_SB_ALLOW_IN_USER_PAGE_DESC"
+				default="1"
+				class="btn-group btn-group-yesno"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			<field
+				name="login"
+				type="modal_menu"
+				label="PLG_JDSOCIALLOGIN_LOGIN_REDIRECTURL_LABEL"
+				description="PLG_JDSOCIALLOGIN_LOGIN_REDIRECTURL_DESC"
+				disable="separator,alias,heading,url"
+				select="true"
+				new="true"
+				edit="true"
+				clear="true"
+				>
+				<option value="">JDEFAULT</option>
+			</field>
+          <field 
+               name="style" 
+               type="jdheading" 
+               icon="icon-palette"
+               label="COM_PLUGINS_GLOBAL_STYLING_LABEL"
+               description="COM_PLUGINS_GLOBAL_STYLING_DESC"
+               />      
+			<field name="socialOrder" type="jdicon"  label="PLG_JDSOCIALLOGIN_ORDERING_LABEL" description="PLG_JDSOCIALLOGIN_ORDERING_DESC" />
+			<field name="buttonsStyle" type="jdstyle" default="large-buttons" label="PLG_JDSOCIALLOGIN_BUTTON_LABEL"  description="PLG_JDSOCIALLOGIN_BUTTON_DESC"/>
+         </fieldset>
+      
+      </fields>
+   </config>
+   <updateservers>
+      <server type="extension" name="" priority="1">https://cdn.joomdev.com/extensionupdates/jdsociallogin/jdsociallogin.xml</server>
+   </updateservers>
+</extension>
