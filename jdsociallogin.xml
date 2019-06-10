@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" method="upgrade" group="system">
-   <name>PLG_JDSOCIALLOGIN_LABEL</name>
-   <author>JoomDev</author>
-   <creationDate>June 2019</creationDate>
-   <version>1.0.0</version>
-   <copyright>Copyright (C) 2019 Joomdev, Inc. All rights reserved.</copyright>
-   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-   <authorEmail>info@joomdev.com</authorEmail>
-   <authorUrl>https://www.joomdev.com</authorUrl>
-   <description>PLG_JDSOCIALLOGIN_DESC</description>>
-   <files>
-      <filename plugin="jdsociallogin">jdsociallogin.php</filename>
-      <folder>lib</folder>
-	   <folder>fields</folder>
-      <folder>layouts</folder>
-   </files>
-    <media folder="media" destination="plg_jdsociallogin">
-      <folder>assets</folder>
-   </media>
-   <languages folder="language">
-      <language tag="en-GB">en-GB/en-GB.plg_system_jdsociallogin.ini</language>
-      <language tag="en-GB">en-GB/en-GB.plg_system_jdsociallogin.sys.ini</language>
-   </languages>
-   <config>
-      <fields name="params">
-           <fieldset name="basic" addfieldpath="/administrator/components/com_menus/models/fields">
-           <field 
-               name="spacerFacebook" 
-               type="jdheading" 
+	<name>PLG_JDSOCIALLOGIN_LABEL</name>
+	<author>JoomDev</author>
+	<creationDate>June 2019</creationDate>
+	<version>1.0</version>
+	<copyright>Copyright (C) 2019 Joomdev, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomdev.com</authorEmail>
+	<authorUrl>https://www.joomdev.com</authorUrl>
+	<description>PLG_JDSOCIALLOGIN_DESC</description>
+	<files>
+		<filename plugin="jdsociallogin">jdsociallogin.php</filename>
+		<folder>lib</folder>
+		<folder>fields</folder>
+		<folder>layouts</folder>
+	</files>
+	<media folder="media" destination="plg_jdsociallogin">
+		<folder>assets</folder>
+	</media>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_jdsociallogin.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_jdsociallogin.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_menus/models/fields">
+				<field 
+					name="spacerFacebook" 
+					type="jdheading" 
                icon="icon-pencil-2"
                label="COM_PLUGINS_FACEBOOK_SPACER_LABEL"
-               description=""
-               />           
+               />
            
            <field
 				   name="enableFb"
@@ -65,13 +64,12 @@
                url="COM_PLUGINS_FACEBOOK_CALLBACK_URL"
                label="COM_PLUGINS_FACEBOOK_CALLBACK_LABEL"
                description="COM_PLUGINS_FACEBOOK_CALLBACK_DESC"
-               />  
+               />
          <field 
                name="spacerTwitter" 
                type="jdheading" 
                icon="icon-pencil-2"
                label="COM_PLUGINS_TWITTER_SPACER_LABEL"
-               description=""
                />
 
             <field
@@ -108,7 +106,7 @@
                url="COM_PLUGINS_TWITTER_CALLBACK_URL"
                label="COM_PLUGINS_TWITTER_CALLBACK_LABEL"
                description="COM_PLUGINS_TWITTER_CALLBACK_DESC"
-               />  
+               />
          </fieldset>
          <fieldset name="design" addfieldpath="/plugins/system/jdsociallogin/fields">
          <field 
@@ -117,7 +115,7 @@
                icon="icon-cog"
                label="COM_PLUGINS_GLOBAL_SETTINGS_LABEL"
                description="COM_PLUGINS_GLOBAL_SETTINGS_DESC"
-               />         
+               />
           <field
 				name="allowInUserPage"
 				type="radio"
@@ -148,9 +146,9 @@
                icon="icon-palette"
                label="COM_PLUGINS_GLOBAL_STYLING_LABEL"
                description="COM_PLUGINS_GLOBAL_STYLING_DESC"
-               />      
-			<field name="socialOrder" type="jdicon"  label="PLG_JDSOCIALLOGIN_ORDERING_LABEL" description="PLG_JDSOCIALLOGIN_ORDERING_DESC" />
-			<field name="buttonsStyle" type="jdstyle" default="large-buttons" label="PLG_JDSOCIALLOGIN_BUTTON_LABEL"  description="PLG_JDSOCIALLOGIN_BUTTON_DESC"/>
+               />
+			<field name="socialOrder" type="jdicon" label="PLG_JDSOCIALLOGIN_ORDERING_LABEL" description="PLG_JDSOCIALLOGIN_ORDERING_DESC" />
+			<field name="buttonsStyle" type="jdstyle" default="large-buttons" label="PLG_JDSOCIALLOGIN_BUTTON_LABEL" description="PLG_JDSOCIALLOGIN_BUTTON_DESC"/>
          </fieldset>
       
       </fields>

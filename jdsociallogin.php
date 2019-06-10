@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @package   Social Login
+ * @package   JD Social Login
  * @author    JoomDev https://www.joomdev.com
  * @copyright Copyright (C) 2009 - 2019 JoomDev.
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
@@ -168,13 +168,11 @@ class plgSystemJDsociallogin extends JPlugin {
 		
 			    
 	    if($style=="facebook"){
-	        return '<div class="jd-social-btns"><p>'.JTEXT::_('Or Login With').'</p>'.$facebookSocailBtn.$twitterSocialBtn.'</div>';
+	   	return '<div class="jd-social-btns"><p>'.JTEXT::_('JDSL_ORLOGINWITH').'</p>'.$facebookSocailBtn.$twitterSocialBtn.'</div>';
 	    }else{
-	         return '<div class="jd-social-btns"><p>'.JTEXT::_('Or Login With').'</p>'.$twitterSocialBtn.$facebookSocailBtn.'</div>';
-	    }
-	    
+	   	return '<div class="jd-social-btns"><p>'.JTEXT::_('JDSL_ORLOGINWITH').'</p>'.$twitterSocialBtn.$facebookSocailBtn.'</div>';
+	    }   
 	}
-
 
 	/**
 	 * Should I enable the substitutions performed by this plugin?
