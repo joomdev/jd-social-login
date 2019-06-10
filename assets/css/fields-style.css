@@ -1,26 +1,27 @@
-   
- .social-container {
-  height: 130px;
-
+.social-container {
+	height: 130px;
 }
+
 .box {
-  padding: 23px 28px;
-  text-align:center;
-  color:white;
-  height: 72%%;
-  font-size: 15px;
-  width: 10%;
-  margin-right: 5px;
-  cursor:pointer;
-  float:left;
+	padding: 23px 28px;
+	text-align: center;
+	color: white;
+	height: 72%;
+	font-size: 15px;
+	width: 10%;
+	margin-right: 5px;
+	cursor: pointer;
+	float: left;
 }
 
-.box.facebook{
-    background:#4C69BA;
+.box.facebook {
+	background: #4C69BA;
 }
-.box.twitter{
-    background:#1DA1F2;
+
+.box.twitter {
+	background: #1DA1F2;
 }
-.box:hover{
-  cursor: all-scroll;
- }
+
+.box:hover {
+	cursor: all-scroll;
+}

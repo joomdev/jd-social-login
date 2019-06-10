@@ -1,47 +1,48 @@
-
+.jd-social-btns {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 /* Shared */
-.loginBtn {
-   box-sizing: border-box;
-   position: relative;
-   margin: 0.2em;
-   border: none;
-   text-align: left;
-   line-height: 34px;
-   white-space: nowrap;
-   border-radius: 0.2em;
-   font-size: 16px;
-   color: #FFF;
- }
- /* Facebook */
- .loginBtn--facebook {
-   background-color: #4C69BA;
-   background-image: linear-gradient(#4C69BA, #3B55A0);
-   text-shadow: 0 -1px 0 #354C8C;
- }
+.jd-social-btns .loginBtn {
+	box-sizing: border-box;
+	position: relative;
+	margin: 2px;
+	border: none;
+	text-align: left;
+	line-height: 34px;
+	white-space: nowrap;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #FFF;
+	padding: 5px 10px;
+	cursor: pointer;
+}
 
- .loginBtn--facebook:hover,
- .loginBtn--facebook:focus {
-   background-color: #5B7BD5;
-   background-image: linear-gradient(#5B7BD5, #4864B1);
- }
- 
- 
- /* twitter */
- .loginBtn--twitter {
-   background: #1DA1F2;
- }
+/* Facebook */
+.jd-social-btns .loginBtn--facebook {
+	background-color: #4C69BA;
+	background-image: linear-gradient(#4C69BA, #3B55A0);
+	text-shadow: 0 -1px 0 #354C8C;
+}
 
- .loginBtn--twitter:hover,
- .loginBtn--twitter:focus {
-   background: #1DA1F2;
- }
+.jd-social-btns .loginBtn--facebook:hover,
+.jd-social-btns .loginBtn--facebook:focus {
+	background-color: #5B7BD5;
+	background-image: linear-gradient(#5B7BD5, #4864B1);
+}
 
- .jd-social-btns{
-   text-align: center;
-   margin-top: 20px;
-   margin-bottom: 20px;
- }
- .social-form{
-   display:inline-block;
- }
+/* twitter */
+.jd-social-btns .loginBtn--twitter {
+	background: #1DA1F2;
+}
+
+.jd-social-btns .loginBtn--twitter:hover,
+.jd-social-btns .loginBtn--twitter:focus {
+	background: #1DA1F2;
+}
+
+.jd-social-btns .social-form {
+	display: inline-block;
+}
