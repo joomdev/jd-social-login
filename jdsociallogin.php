@@ -120,7 +120,6 @@ class plgSystemJDsociallogin extends JPlugin {
 		$module->content    .= $socialLoginButtons;
 	}
 	
-	
 	public function GetStyle($style,$fb,$twitter){
 		$facebookSocailBtn="";
 		$twitterSocialBtn="";
@@ -168,9 +167,9 @@ class plgSystemJDsociallogin extends JPlugin {
 		
 			    
 	    if($style=="facebook"){
-	   	return '<div class="jd-social-btns"><p>'.JTEXT::_('JDSL_ORLOGINWITH').'</p>'.$facebookSocailBtn.$twitterSocialBtn.'</div>';
+	   	return '<div class="jd-social-btns"><p>'.JTEXT::_('OR').'</p>'.$facebookSocailBtn.$twitterSocialBtn.'</div>';
 	    }else{
-	   	return '<div class="jd-social-btns"><p>'.JTEXT::_('JDSL_ORLOGINWITH').'</p>'.$twitterSocialBtn.$facebookSocailBtn.'</div>';
+	   	return '<div class="jd-social-btns"><p>'.JTEXT::_('OR').'</p>'.$twitterSocialBtn.$facebookSocailBtn.'</div>';
 	    }   
 	}
 
