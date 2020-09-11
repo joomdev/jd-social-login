@@ -110,6 +110,16 @@ class plgSystemJDsociallogin extends JPlugin
 			return;
 		}
 
+		$docuemnt = \JFactory::getDocument();
+		$docuemnt->addStyleSheet(JURI::root() . 'media/plg_jdsociallogin/assets/css/styles.css');
+
+		$loadJquery = $this->params->get('loadJquery', 1);
+		if ($loadJquery) {
+			$docuemnt->addScript('//code.jquery.com/jquery-3.3.1.min.js');
+		}
+
+		$docuemnt->addScript(JURI::root() . 'media/plg_jdsociallogin/assets/js/script.js');
+
 		$socialLoginButtons = $this->Getstyle($this->params->get('socialOrder', "facebook"), $this->params->get('enableFb'), $this->params->get('enableTwitter'));
 		$module->content    .= $socialLoginButtons;
 	}
@@ -289,7 +299,7 @@ class plgSystemJDsociallogin extends JPlugin
 
 			return  $userProfile;
 			$adapter->disconnect();
-		} catch (\Exception $e) {
+		} catch (Exception $e) {
 			JFactory::getApplication()->enqueueMessage($e->getMessage(), 'error');
 		}
 	}
@@ -492,23 +502,6 @@ class plgSystemJDsociallogin extends JPlugin
 			}
 			return $user;
 			exit;
-		}
-	}
-	public function onBeforeCompileHead()
-	{
-		if (JFactory::getApplication()->input->get('option', '') !== 'com_users') {
-			return;
-		}
-		if ($this->app->isSite()) {
-			$docuemnt = \JFactory::getDocument();
-			$docuemnt->addStyleSheet(JURI::root() . 'media/plg_jdsociallogin/assets/css/styles.css');
-
-			$loadJquery = $this->params->get('loadJquery', 1);
-			if ($loadJquery) {
-				$docuemnt->addScript('//code.jquery.com/jquery-3.3.1.min.js');
-			}
-
-			$docuemnt->addScript(JURI::root() . 'media/plg_jdsociallogin/assets/js/script.js');
 		}
 	}
 }
