@@ -139,11 +139,11 @@ class plgSystemJDsociallogin extends JPlugin
 		if ($fb) {
 			$facebookSocailBtn = '
 										<div class="social-form">
-											<form  action="" method="get" id="" name="">
+											<form method="get">
 												<div class="jd-button-control">
 												<button type="submit" class="loginBtn loginBtn--facebook">
 													<span class="social-icon">
-														<img src="' . JURI::root() . '/media/plg_jdsociallogin/assets/img/facebook.png" width="33"></img>
+														<img src="' . JURI::root() . '/media/plg_jdsociallogin/assets/img/facebook.png" alt="Facebook Icon" width="33" />
 													</span>' . $fbText . '</button>
 													<input type="hidden" value="sociallogin" name="com_ajax">
 													<input type="hidden" value="login" name="action">
@@ -156,11 +156,11 @@ class plgSystemJDsociallogin extends JPlugin
 		if ($twitter) {
 			$twitterSocialBtn   = '
 									<div class="social-form">
-										<form  action="" method="get" id="" name="">
+										<form method="get">
 											<div class="jd-button-control">
 												<button type="submit" class="loginBtn loginBtn--twitter">
 												<span class="social-icon">
-													<img src="' . JURI::root() . '/media/plg_jdsociallogin/assets/img/twitter.png" width="33"></img>
+													<img src="' . JURI::root() . '/media/plg_jdsociallogin/assets/img/twitter.png" alt="Twitter Icon" width="33" />
 												</span>' . $twitterText . '</button>
 												<input type="hidden" value="sociallogin" name="com_ajax">
 												<input type="hidden" value="login" name="action">
