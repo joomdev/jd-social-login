@@ -2,8 +2,8 @@
 <extension version="3.1" type="plugin" method="upgrade" group="system">
    <name>PLG_JDSOCIALLOGIN_LABEL</name>
    <author>JoomDev</author>
-   <creationDate>September 2020</creationDate>
-   <version>1.2</version>
+   <creationDate>Oct 2020</creationDate>
+   <version>1.3</version>
    <copyright>Copyright (C) 2020 Joomdev, Inc. All rights reserved.</copyright>
    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
    <authorEmail>info@joomdev.com</authorEmail>
