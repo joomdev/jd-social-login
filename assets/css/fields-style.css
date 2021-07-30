@@ -6,12 +6,15 @@
 	padding: 23px 28px;
 	text-align: center;
 	color: white;
-	height: 72%;
+	height: 100%;
 	font-size: 15px;
-	width: 10%;
 	margin-right: 5px;
 	cursor: pointer;
 	float: left;
+}
+
+.box .ui-sortable-handle {
+	color: white;
 }
 
 .box.facebook {
